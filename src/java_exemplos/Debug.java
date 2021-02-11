@@ -1,4 +1,4 @@
-package course;
+package java_exemplos;
 
 import java.util.Locale;
 import java.util.Scanner;

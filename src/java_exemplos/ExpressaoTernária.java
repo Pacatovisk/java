@@ -1,4 +1,4 @@
-package course;
+package java_exemplos;
 
 public class ExpressaoTernária {
 
