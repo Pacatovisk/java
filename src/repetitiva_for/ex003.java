@@ -2,7 +2,9 @@ package repetitiva_for;
 
 import java.util.Locale;
 import java.util.Scanner;
-
+/*
+ * 
+ */
 public class ex003 {
 
 	public static void main(String[] args) {
