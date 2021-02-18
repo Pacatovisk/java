@@ -1,4 +1,6 @@
-package poo;
+package poo.application;
+
+import poo.entities.Funcionario;
 
 public class AppFuncionario {
 

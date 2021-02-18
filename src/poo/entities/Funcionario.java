@@ -1,4 +1,4 @@
-package poo;
+package poo.entities;
 
 public class Funcionario {
     private String nome;
