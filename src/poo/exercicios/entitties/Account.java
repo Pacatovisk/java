@@ -1,6 +1,6 @@
-package poo.entitties;
+package poo.exercicios.entitties;
 
-public class Product {
+public class Account {
 
     // Constante
     private static final double TAXA = 5.0;
@@ -11,16 +11,16 @@ public class Product {
 
 
     // Constructor with two parameters - Construtor com dois parametros
-    Product(String accountNumber, String holder) {
+    Account(String accountNumber, String holder) {
         this.accountNumber = accountNumber;
         this.holder = holder;
     }
 
     // Constructor with three parameters - Construtor com três parametros
-    public Product(String accountNumber, String holder, double balance) {
+    public Account(String accountNumber, String holder, double initialDeposit) {
         this.accountNumber = accountNumber;
         this.holder = holder;
-        this.balance = balance;
+        deposit(initialDeposit);
     }
 
     // get method to return the holder - metodo get para retornar o titular
@@ -39,7 +39,7 @@ public class Product {
     }
 
     // set method to change the balance - metodo set para alterar o saldo
-    public void setBalance(double valueDeposit){
+    public void deposit(double valueDeposit){
         this.balance += valueDeposit;
     }
 
