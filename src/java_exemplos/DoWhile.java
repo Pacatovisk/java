@@ -9,14 +9,19 @@ public class DoWhile {
 		Scanner sc = new Scanner(System.in);
 
 		char resp;
-		do {
-			System.out.print("Digite a temperatura em Celsius: ");
-			double C = sc.nextDouble();
-			double F = 9.0 * C / 5.0 + 32.0;
-			System.out.printf("Equivalente em Fahrenheit: %.1f%n", F);
-			System.out.println("Deseja repetir (s/n)?");
-			resp = sc.next().charAt(0);
-		} while (resp == 's');
+
+		try {
+			do {
+				System.out.print("Digite a temperatura em Celsius: ");
+				double C = sc.nextDouble();
+				double F = 9.0 * C / 5.0 + 32.0;
+				System.out.printf("Equivalente em Fahrenheit: %.1f%n", F);
+				System.out.println("Deseja repetir (s/n)?");
+				resp = sc.next().charAt(0);
+			} while (resp == 's');
+		} catch (Exception exception){
+			System.out.println("Inserir números inteiros ou flutuantes! Letras não são permetidas!");
+		}
 
 		sc.close();
 	}
